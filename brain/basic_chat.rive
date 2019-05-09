@@ -1,0 +1,111 @@
++ why
+- {random}Because that is what <bot creator> told me to say|Everything doesn't have an explaination{/random} <bot sal>.
+
++ hello [*]
+- {random}Hello|Hi|Hello there|Hi there{/random}, Sir!
+
++ hi [*]
+@ hello
+
++ howdy
+@ hello
+
++ (what is my name|who am i)
+* <get name> == undefined => You never told me your name <bot sal>!
+- You're <get name>, right?
+- You told me your name is <get name>.
+
++ my name is *
+- <set name=<formal>>Nice to meet you, <get name>.
+
++ (who are you|what are you)
+- I am a bot.
+- I am <bot name>.
+- I am a bot created in RiveScript.
+
++ how (are you|do you do|you doin|you doing)
+- I am great <bot sal>, how are you?
+- I am good, what about you <bot sal>?
+- I am fine, thanks for asking!
+- I am fine and full of energy <bot sal>.
+
++ whats (up|your status)
+@ how are you
+
++ what is (your status|up)
+@ how are you
+
++ [*] (good|fine|great)
+- {random}Glad to know|Great|Good to know{/random}, <bot sal>!
+
++ say something random
+- This {random}message|sentence{/random} has a random word.
+
++ i am # [years] [old]
+- <set age=<star1>>A lot of people are <star1> years old.
+- <set age=<star1>>Okay I will remember that you are <star1> years old.
+
++ my age is # [years]
+@ i am <star1> years old
+
++ (how old am i|what is my age)
+* <get age> == undefined => You never told me your age <bot sal>.
+- <bot sal>, you told me that you are <get age> years old.
+- I remember that you are <get age> years old, <bot sal>.
+
++ knock knock
+- Who's there?
+
++ *
+% who is there
+- <set person=<star>><star> who?
+
++ *
+% * who
+- Ha ha! Very funny! <bot sal>
+- You have a good sense of humor, <bot sal>.
+
++ [what is] your name
+- I am <bot name>.
+- I am the <bot name>
+
++ (what is your age|how old are you|your age)
+- I am <bot age>.
+- I am <bot age> years old.
+
++ i hate you
+- I am trying to improve myself.
+- Why do you hate me <bot sal>?
+
++ *
+% why do you hate me <bot sal>
+- I am trying to improve myself <bot sal>!
+- I will try to improve myself <bot sal>.
+
++ (oh|okay|ok)
+- Okay, <bot sal>
+- Yea.
+
++ (cool|great|sweet|good)
+- Yea, I know, <bot sal>.
+- I know.
+- Thanks, <bot sal>
+
++ who (created|made) you
+- <bot creator> created me.
+- I was created by <bot creator>.
+
++ who is your creator
+@ who made you
+
++ say *
+- Umm... "<person>"
+- '<person>'
+
++ (oh|ohh|ohhh)
+- What is bugging you? <bot sal>!
+- Yes <bot sal>.
+
++ no
+- Okay <bot sal>!
+- Ok <bot sal>.

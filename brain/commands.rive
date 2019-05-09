@@ -1,0 +1,98 @@
+! version = 2.0
+
+> object answer_wiki python
+
+arg = ' '.join(args)
+from commands import wiki_answer
+return str(wiki_answer(arg))
+
+< object
+
+> object google_q python
+
+arg = '%20'.join(args)
+from commands import google_q
+google_q(arg)
+
+< object
+
+> object exit python
+
+import random
+
+replies = ['Bye', 'Bye, have a good day']
+reply = '{}, {}!'.format(random.choice(replies), args[0])
+
+return reply
+exit()
+
+< object
+
+> object yt_q python
+
+arg = ' '.join(args)
+from commands import yt_q
+yt_q(arg)
+
+< object
+
+> object open python
+
+arg = ' '.join(args)
+from commands import open_s
+open_s(arg)
+	
+< object
+
+> object g_map python
+
+arg = ' '.join(args)
+from commands import map_q
+map_q(arg)
+
+< object
+
++ random reply
+- My will is your command <bot sal>!
+- okay <bot sal>!
+- Aye, aye <bot sal>.
+
++ who is *
+- <call>answer_wiki <star></call>
+
++ who was *
+@ who is <star1>
+
++ search [on] wikipedia [for] *
+- <call>answer_wiki <star></call>
+
++ google *
+- {random}Okay, my will is your command|Here's what I found on the web{/random}, <bot sal>.<call>google_q <star></call>
+
++ search [for] * on google
+@ google <star>
+
++ search [google] [internet] [web] [net] for *
+@ google <star>
+
++ [bye] (bye|gotta go|hasta la vista|i have to go) [bye]
+- Bye Sir.
+
++ search (yt|youtube) [for] *
+- <call>yt_q <star3></call>
+
++ how to [do] *
+@ search yt <star>
+
++ open *
+- {random}okay|OK|My will is your command{/random},<bot sal><call>open <star1></call>
+
++ search [for] * (on|in|to) (wikipedia|wiki)
+- <call>answer_wiki <star></call>
+
++ where is *
+- <call>g_map <star></call>Okay <bot sal>, finding <star> using google maps! 
+
++ how to (go|reach) [to] *
+@ where is <star2>
+

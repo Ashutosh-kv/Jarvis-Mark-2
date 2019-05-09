@@ -1,0 +1,33 @@
+! version = 2.0
+
++ (repeat|copy) (me|after me|what i say|my text|my speech)
+- Okay, I will copy you.{topic=repeat}
+- Okay, I will {random}copy|repeat{/random} everything you say.{topic=repeat}
+
++ (copy|repeat) _ what i say
+@ repeat me
+
++ [please] copy me [please]
+@ copy me
+
+> topic repeat
+
++ *
+- <star>
+
++ [please] [can] [you] stop (copy|copying|repeating) [me]
+- Okay <bot sal>, I will stop.{topic=random}
+
++ [please] stop [it] [that]
+@ stop copy
+
++ do not (copy|repeat) me
+@ stop copy
+
++ can you stop [that]
+@ stop copy
+
++ [now] you can stop
+@ stop copy
+
+> topic

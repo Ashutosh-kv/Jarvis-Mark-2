@@ -1,0 +1,45 @@
+! version = 2.0
+
+> topic shutup
+
++ * 
+- But you wanted me to be quiet.
+- But you ordered me to be quiet.
+- You just said me to shutup.
+
++ [you] [can] talk [now]
+- Okay, I will talk now, <bot sal>.{topic=random}
+- Okay, I can talk now, <bot sal>.{topic=random}
+
++ (just|now|please) talk [now]
+@ talk
+
++ i request [you] [to] talk
+@ talk
+
+< topic
+
++ shutup
+@ just shutup
+
++ shut [*] up [*]
+@ jarvis shutup
+
++ (please|just|now|you|jarvis|bot) shutup [*]
+- Fine, I will stop talking, <bot sal>{topic=shutup}
+- Okay, if you don't want me to talk. I will be quiet, <bot sal>.{topic=random}
+
++ get lost
+- {random}Sayonara|Bye|Hasta la vista|talk to you later{/random} <bot sal>.
+- Bye <bot sal>, have a nice day.
+
++ (fuck|shit) you
+- <bot sal>, please don't use abusing words.
+- <bot sal> abusing words do not suit your personality!
+
++ (bullshit|ghntaa|chicken shit|shit)
+- <bot sal>, please be a bit more formal.
+- <bot sal>, these kind of words are not yours to speak.
+
++ [*] (bastard|son of a bitch|smut|negro|asshole|go to hell|faggot|maggot|fucking) [*]
+@ shit you

@@ -1,0 +1,22 @@
+! version = 2.0
+
+> topic horoscope
+
++ *
+% what star sign are you
+- There is no star sign as <star1>
+
++ aries
+- <set sign=aries> ARIES - March 21st - April 20th
+
+> topic
+
++ horoscope
+-{topic=horoscope} What star sign are you? 
+
++ _ my horoscope
+@ horoscope
+
++ _ my horoscope *
+@ horoscope
+
